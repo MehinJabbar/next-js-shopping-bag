@@ -1,12 +1,10 @@
+import style from './footer.module.css'
+
 export default function Footer() {
   return (
-    <footer>
-      <aside>
-        News
-      </aside>
-      <aside> 
-        Email
-      </aside>
+    <footer className={style['app-footer']}>
+      &copy; {new Date().getFullYear()} All Rights Reserved 
+      
     </footer>
   )
 }
