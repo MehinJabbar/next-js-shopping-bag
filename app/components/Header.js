@@ -1,11 +1,15 @@
 import styles from './header.module.css'
-
+import Image from 'next/image'
 export default function Header() {
   return (
     <header className={styles['app-header']}>
         <div className={`${styles.wrapper} container`}>
         <aside>
-            Logo
+            <Image 
+            src='/logo3x.png' 
+            alt="Web Page"
+            height= {22}
+            width={108}/>
         </aside>
         <aside>
             <nav>
